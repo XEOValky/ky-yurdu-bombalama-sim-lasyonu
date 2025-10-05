@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    <link rel="stylesheet" href="main.css">
+    <title>Asteroid Impact Simulator</title>
+</head>
+<body>
+     <div id="map"></div>
+
+     <div class="controls">
+         <h3>Set Asteroid Parameters:</h3>
+         <label>Diameter: <span id="diameterValue">500</span> meters</label>
+         <input type="range" id="diameter" min="50" max="5000" value="500" step="50">
+
+         <br><br>
+
+         <label>Velocity: <span id="velocityValue">20</span> km/s</label>
+         <input type="range" id="velocity" min="5" max="30" value="20" step="1">
+
+         <br><br>
+
+         <div class="results" id="results">
+             <h3>Çarpışma sonuçları burada çıkar</h3>
+         </div>
+
+         <p><strong>Haritada bir yere tıklayarak çarpışma yaratın</strong></p>
+     </div>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""></script>
+     <script src="main.js"></script>
+</body>
+</html>
