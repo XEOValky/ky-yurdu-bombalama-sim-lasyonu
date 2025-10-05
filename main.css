@@ -1,0 +1,17 @@
+#map { 
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+
+.controls {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    padding: 10px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+}
